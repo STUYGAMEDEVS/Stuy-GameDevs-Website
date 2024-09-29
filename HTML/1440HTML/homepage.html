@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<head>
+
+<img src="logo.png" class="box" style="display: block; width: 40%; margin-left: auto; margin-right: auto; image-rendering: pixelated;">
+
+<video autoplay muted loop id="myVideo">
+  <source src="stars.mp4" type="video/mp4">
+</video>
+
+
+
+<style>
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  object-fit: fill;
+  z-index: -1;
+}
+
+#box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+z-index: 0;
+}
+
+.button {
+  background-color: #C0C0C0;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+
+  border: 2px solid #71797E;
+  cursor: pointer;  
+
+}
+
+.joinbutton {
+  background-color: #C0C0C0;
+  color: black;
+  padding: 26px 27px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #71797E;
+border-radius: 50%;
+  cursor: pointer;  
+position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+transition-duration: 0.4s;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #808080;
+}
+
+.joinbutton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #4CBB17;
+border: 2px solid black;
+}
+
+.navigation {
+      height: 50px;
+length: 50px;
+      position: relative;
+}
+
+
+
+
+.slider {
+        width: 1000px;
+        height: 600px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 160px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 3000px;
+        background-color: pink;
+        height: 600px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -1000px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -2000px;
+      }
+      .buttons {
+        position: relative;
+        top: -40px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+
+.square {
+  width: 1000px;
+  border: 10px solid black;
+	position: absolute;
+}
+
+.footer {
+  width: 99.54%;
+  border: 5px solid black;
+background-color: black;
+opacity: 0.5;
+	position: absolute;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="navigation">
+
+<img src="side1.png" style="position: absolute; left: 36.4%; top: 15.5px; width: 2.24%">
+<img src="side2.png" style="position: absolute; left: 61.8%; top: 15.5px; width: 2.24%">
+
+<a href="http://homer.stuy.edu/~trahman60/HTML/resources.html" class="button" style="position: absolute; left: 38.3%; top: 20px; padding: 0.4% 1%;">Resources</a> 
+<a href="http://homer.stuy.edu/~trahman60/HTML/homepage.html" class="button" style="position: absolute; left: 38.3%; top: 20px; padding: 0.4% 2.25%;">Home</a> 
+<a href="http://homer.stuy.edu/~trahman60/HTML/games.html" class="button" style="position: absolute; left: 38.3%; top: 20px; padding: 0.4% 37px;">Games</a> 
+
+<a href="http://homer.stuy.edu/~trahman60/HTML/team.html" class="button" style="position: absolute; left: 56.6%; top: 20px; padding: 0.4% 42.5px;">Team</a> 
+<a href="https://stuyactivities.org/gamedevs/" target="_blank" class="joinbutton">Join</a> 
+
+</div>
+
+<img src="box.png" class="box" style="display: block; position: absolute; left: 50%; transform: translateX(-50%); width: 57%; height: 186%; margin-left: auto; margin-right: auto; image-rendering: pixelated; top: 28.9%;">
+
+<div class="square" style="left: 50%; transform: translateX(-50%); top: 474px; height: 600px;"></div>
+
+<h1 style="text-decoration: underline; font-size: 30px; position: absolute; left: 27%; top: 1170px">What do we do?</h1>
+<p style="font-size: 30px; position: absolute; left: 27%; top: 1200px;"> Game Developers is a low commitment, chill club for anyone interested in exploring the art
+<br>
+of making games, or even just learning the basics of a few programming languages. We also have 
+<br>
+access to a computer lab so personal devices are optional (atleast with the 2D section). You can 
+<br> 
+also just come in and play games, or do your homework while we go over slides that introduce 
+<br>
+developing.
+</p>
+
+<h1 style="text-decoration: underline; font-size: 30px; position: absolute; left: 27%; top: 1470px">Why Should You Consider Joining?</h1>
+<p style="font-size: 30px; position: absolute; left: 27%; top: 1500px;">
+For freshman and sophmores, this club is a great oportunity to get a head start on Computer 
+<br>
+Science by learing the format of a language based on Python. First semester will consist of 2D
+<br>
+development of the game engine "Godot". Second semester is planned to be 3D development on 
+<br>
+Unity with C#. By the end of the year, you will have knowledge on two engines, two dimensions,
+<br>
+and two languages. All lesson slides will be posted on this website after the meeting, but it is 
+<br>
+recommended that you come in and try it yourself. 
+</p>
+
+<h1 style="text-decoration: underline; font-size: 30px; position: absolute; left: 27%; top: 1770px">Game Jams</h1>
+<p style="font-size: 30px; position: absolute; left: 27%; top: 1800px;">
+At the end of every semester, we will have our Game Jam. Here, we show off the games we
+<br>
+made in the time allocated and play them together. There will be an itch.io page for you
+<br>
+to post your submissions. The link will be in the "Resources" page on this website when
+<br>
+submitions are open. The person who creates the best game to be judged by the leaders, will 
+<br>
+get a prize!
+</p>
+
+
+
+<div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+        <img src="img1.png" class="slide" width="1000" height="600" />
+        <img src="img2.png" class="slide" width="1000" height="600" />
+        <img src="img3.png" class="slide" width="1000" height="600" />
+      </div>
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+      </div>
+    </div>
+
+
+
+<div class="footer" style="left: 50%; transform: translateX(-50%); top: 210%; height: 300px;"></div>
+<p style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 31%; top: 210.5%; color: white; opacity: 0.7;">Contact Information</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 26%; top: 215%; color: white; opacity: 0.7;">Email: stuyvesantgamedev@gmail.com</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 29%; top: 219%; color: white; opacity: 0.7;">Number: +1 929 919 0588</p>
+<p style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 35.5%; top: 223%; color: white; opacity: 0.7;">Address</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 26%; top: 227.5%; color: white; opacity: 0.7;">345 Chambers St, New York, NY 10282</p>
+
+<a href="" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 63%; top: 214%; color: white; opacity: 0.7;">Home</a>
+<a href="" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 61.2%; top: 218.5%; color: white; opacity: 0.7;">Resources</a>
+<a href="" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 62.7%; top: 223%; color: white; opacity: 0.7;">Games</a>
+<a href="" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 63%; top: 227.5%; color: white; opacity: 0.7;">Team</a>
+
+<p style="font-family: Courier New; font-size: 20px; position: absolute; left: 50%; transform: translateX(-50%); top: 234%; color: white; opacity: 0.7;">Stuyright © 2024 Game Developers</p>
+<p style="font-family: Courier New; font-size: 20px; position: absolute; left: 50%; transform: translateX(-50%); top: 237%; color: white; opacity: 0.7;">Created February 26th, 2024</p>
+
+
+</body>
+
+
+
+
+
+</html>
+

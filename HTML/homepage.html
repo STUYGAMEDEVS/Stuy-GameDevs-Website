@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<head>
+
+
+<img src="logo.png" class="box" style="display: block; width: 40%; margin-left: auto; margin-right: auto; image-rendering: pixelated;">
+
+<video autoplay muted loop id="myVideo">
+  <source src="stars.mp4" type="video/mp4">
+</video>
+
+<title>GameDevs - Home Page</title>
+
+<style>
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  object-fit: fill;
+  z-index: -1;
+}
+
+#box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+z-index: 0;
+}
+
+.button {
+  background-color: #C0C0C0;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+
+  border: 2px solid #71797E;
+  cursor: pointer;  
+
+}
+
+.joinbutton {
+  background-color: #C0C0C0;
+  color: black;
+  padding: 26px 27px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #71797E;
+border-radius: 50%;
+  cursor: pointer;  
+position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+transition-duration: 0.4s;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #808080;
+}
+
+.joinbutton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #228B22;
+border: 2px solid black;
+}
+
+.navigation {
+      height: 50px;
+length: 50px;
+      position: relative;
+}
+
+
+
+
+.square {
+  width: 42%;
+  border: 10px solid black;
+	position: absolute;
+}
+
+.footer {
+  width: 99.64%;
+  border: 5px solid black;
+background-color: black;
+opacity: 0.5;
+	position: absolute;
+}
+
+th {
+
+            text-align: center;
+        }
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="navigation">
+
+<img src="side1.png" style="position: absolute; left: 31.65%; top: 30%; width: 3%">
+<img src="side2.png" style="position: absolute; left: 65.5%; top: 30%; width: 3%">
+
+<a href="http://homer.stuy.edu/~trahman60/HTML/resources.html" class="button" style="position: absolute; left: 34.3%; top: 20px; padding: 8px 24px;">Resources</a> 
+<a href="http://homer.stuy.edu/~trahman60/HTML/homepage.html" class="button" style="position: absolute; left: 51.5%; top: 20px; padding: 8px 40px;">Home</a> 
+<a href="http://homer.stuy.edu/~trahman60/HTML/games.html" class="button" style="position: absolute; left: 41.5%; top: 20px; padding: 8px 37px;">Games</a> 
+
+<a href="http://homer.stuy.edu/~trahman60/HTML/team.html" class="button" style="position: absolute; left: 58.5%; top: 20px; padding: 8px 42.5px;">Team</a> 
+<a href="https://stuyactivities.org/gamedevs/" target="_blank" class="joinbutton">Join</a>
+
+</div>
+
+<img src="bigbox01.png" class="box" style="display: block; position: absolute; left: 50%; transform: translateX(-50%); width: 90%; height: 295%; margin-left: auto; margin-right: auto; image-rendering: pixelated; top: 32%;">
+
+<img src="bigbox02.png" class="box" style="display: block; position: absolute; left: 50%; transform: translateX(-50%); width: 90%; height: 111%; margin-left: auto; margin-right: auto; image-rendering: pixelated; top: 169%;">
+
+<img src="bigbox03.png" class="box" style="display: block; position: absolute; left: 50%; transform: translateX(-50%); width: 90%; height: 75%; margin-left: auto; margin-right: auto; image-rendering: pixelated; top: 275%;">
+
+<div class="square" style="left: 50%; transform: translateX(-50%); top: 43.9%; height: 56%;"></div>
+
+<img src="homeimage.jpg" alt="Teaching Unity, 771x660" width="42%" height="56%" style="position: absolute; left: 50%; transform: translateX(-50%); top: 45%" />
+
+<h1 style="text-decoration: underline; font-size: 30px; position: absolute;  left: 50%; transform: translateX(-50%); top: 107%; text-align: center;">What do we do?</h1>
+<p style="font-size: 30px; position: absolute; left: 50%; transform: translateX(-50%); top: 112%; text-align: center;"> Game Developers is a low commitment, chill club for anyone interested in exploring the art of making games, or even just learning the basics of a few programming languages. We also have access to a computer lab so personal devices are optional (atleast with the 2D section). You can also just come in and play games, or do your homework while we go over slides that introduce developing. First semester will consist of 2D development of the game engine "Godot". Second semester is planned to be 3D development on Unity with C#.
+</p>
+
+<h1 style="text-decoration: underline; font-size: 30px; position: absolute; left: 50%; transform: translateX(-50%); top: 177.5%; text-align: center;">Why Should You Consider Joining?</h1>
+
+<ul style="font-size: 30px; position: absolute; left: 50%; transform: translateX(-50%); top: 181.5%; text-align: center;">
+  <li>This club is a great oportunity to get a head start on Computer Science</li>
+  <li>You will gain knowledge on two engines and dimensions</li>
+  <li>You will be familiar with two programming languages</li>
+</ul>
+
+
+
+
+<h1 style="text-decoration: underline; font-size: 30px; position: absolute; left: 50%; transform: translateX(-50%); top: 283%; text-align: center;">Game Jams</h1>
+<p style="font-size: 30px; position: absolute; left: 50%; transform: translateX(-50%); top: 287%; text-align: center;">
+At the end of every semester, we will have our Game Jam. Here, we show off the games we made in the time allocated and play them together. There will be an itch.io page for you to post your submissions. The link will be in the "Resources" page on this website when submitions open. The person who creates the best game to be judged by the leaders, will recieve a prize!
+</p>
+
+<table border="1" style="position: absolute; left: 50%; transform: translateX(-50%); top: 204.5%; width: 45%; height: 50%; border-color: black;">
+        <tr>
+            <th style="text-align: center;"> Effect Of Joining Game Dev On Brain (Stuyentifically Proven)</th>
+            <th>Smart Person</th>
+		<th>Smarter Person</th>
+		<th>Genius Person</th>
+        </tr>
+	
+        <tr>
+            <td style="text-align: center;">Before Joining Any Clubs</td>
+            <td style="text-align: center; color: red;">X</td>
+<td></td>
+<td></td>
+        </tr>
+	<tr>
+	<td style="text-align: center;">After Joining A Club</td>
+	<td></td>
+	<td style="text-align: center; color: red;">X</td>
+<td></td>
+	</tr>
+        <tr>
+            <td style="text-align: center;">After Joining Game Dev</td>
+<td></td>
+<td></td>
+<td style="text-align: center; color: red;">X</td>
+        </tr>
+    </table>
+
+
+<p style="font-family: Courier New; font-size: 25px; position: absolute; left: 50%; transform: translateX(-50%); top: 255%; color: black;">Following The Joining Of Our Club, Genius Is Guarenteed!</p>
+
+
+<a href="http://homer.stuy.edu/~trahman60/HTML/test.html" class="button" style="position: absolute; left: 50%; transform: translateX(-50%); top: 323%; padding: 8px 42.5px;">Try This Short Quiz To Test Your Knowledge!</a>
+
+<div class="footer" style="left: 50%; transform: translateX(-50%); top: 360%; height: 32%;"></div>
+<p style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 31%; top: 360.5%; color: white; opacity: 0.7;">Contact Information</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 26%; top: 365%; color: white; opacity: 0.7;">Email: stuyvesantgamedev@gmail.com</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 29%; top: 369%; color: white; opacity: 0.7;">Number: +1 929 919 0588</p>
+<p style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 35.5%; top: 373%; color: white; opacity: 0.7;">Address</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 26%; top: 377.5%; color: white; opacity: 0.7;">345 Chambers St, New York, NY 10282</p>
+
+<a href="http://homer.stuy.edu/~trahman60/HTML/homepage.html" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 63%; top: 364%; color: white; opacity: 0.7;">Home</a>
+<a href="http://homer.stuy.edu/~trahman60/HTML/resources.html" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 61.2%; top: 368.5%; color: white; opacity: 0.7;">Resources</a>
+<a href="http://homer.stuy.edu/~trahman60/HTML/games.html" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 62.7%; top: 373%; color: white; opacity: 0.7;">Games</a>
+<a href="http://homer.stuy.edu/~trahman60/HTML/team.html" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 63%; top: 377.5%; color: white; opacity: 0.7;">Team</a>
+
+<p style="font-family: Courier New; font-size: 20px; position: absolute; left: 50%; transform: translateX(-50%); top: 384%; color: white; opacity: 0.7;">Stuyright © 2024 Game Developers</p>
+<p style="font-family: Courier New; font-size: 20px; position: absolute; left: 50%; transform: translateX(-50%); top: 387%; color: white; opacity: 0.7;">Created February 26th, 2024</p>
+
+
+
+</body>
+
+
+
+
+
+</html>
+

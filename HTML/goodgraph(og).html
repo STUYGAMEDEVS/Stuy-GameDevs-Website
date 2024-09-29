@@ -1,0 +1,86 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - matplotlib
+    </py-env>
+</head>
+<body>
+
+<div id = "bar"> </div>
+<py-script>
+from js import XMLHttpRequest
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+
+req = XMLHttpRequest.new()
+file = req.open("GET", "data.csv", False)
+req.send(None)
+africa = {}
+output = ""
+
+fontdict={"family" : "serif", "size" : 22, "weight" : "bold"}
+fontdict2 ={"size" : 10, "weight" : "bold"}
+
+lisp = req.response.split("\n")
+lisp = lisp[1:]
+
+lisp2 = []
+
+adv = 0
+sdbx = 0
+RPG = 0
+pzl = 0
+shtr = 0
+strat = 0
+actn = 0
+svivl = 0
+rcing = 0
+
+vld = ""
+r = ""
+
+x = [0,0,0,0,0,0,0,0,0]
+y = ["Adventure", "Sandbox/Simualtion", "RPG", "Puzzle", "Multiplayer Shooter", "Strategy", "Action", "Survival", "Racing/Sports"]
+
+
+for i in lisp:
+    r = i.strip("1234567890,'")
+    vld = r[1:-1]
+    lisp2.append(vld)
+
+for i in lisp2:
+    x[0] += (i.count("Adventure"))
+    x[1] += (i.count("Sandbox/Simualtion"))
+    x[2] += (i.count("RPG"))
+    x[3] += (i.count("Puzzle"))
+    x[4] += (i.count("Multiplayer Shooter"))
+    x[5] += (i.count("Strategy"))
+    x[6] += (i.count("Action"))
+    x[7] += (i.count("Survival"))
+    x[8] += (i.count("Racing/Sports"))
+
+
+plt.barh(y[0], x[0], color = '#DA70D6')
+plt.barh(y[1], x[1], color = 'red')
+plt.barh(y[2], x[2], color = '#DA70D6')
+plt.barh(y[3], x[3], color = 'red')
+plt.barh(y[4], x[4], color = '#DA70D6')
+plt.barh(y[5], x[5], color = 'red')
+plt.barh(y[6], x[6], color = '#DA70D6')
+plt.barh(y[7], x[7], color = 'red')
+plt.barh(y[8], x[8], color = '#DA70D6')
+
+plt.xlabel("Number of People", **fontdict2)
+plt.title("Most Popular Game Genres", **fontdict)
+
+plt.show()
+
+plt
+
+</py-script>
+</body>
+</html>

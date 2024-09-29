@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<video autoplay muted loop id="myVideo">
+  <source src="stars.mp4" type="video/mp4">
+</video>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameDevs - Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #myVideo {
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: -33%;
+            min-width: 100%; 
+            min-height: 100%;
+            object-fit: fill;
+            z-index: -10;
+        }
+        .quiz-container {
+            max-width: 60%;
+            margin: auto;
+            background-color: silver;
+            padding: 20px 50px;
+            opacity: 0.9;
+            border: 8px solid #ccc;
+            border-radius: 20px;
+            font-size: 18px;
+            position: absolute; 
+            left: 50%; 
+            transform: translateX(-50%);
+            top: 3%;
+        }
+        .square {
+            width: 50%;
+            border: 10px solid black;
+	        position: absolute;
+            background-color: silver;
+            border: 8px solid #ccc;
+            border-radius: 20px;
+            position: absolute; 
+            left: 50%; 
+            opacity: 0.9;
+            transform: translateX(-50%);
+        }
+        .question {
+            margin-bottom: 50px;
+            opacity: 0.95;
+            
+            position: absolute; 
+            
+            font-family: 'Courier New', monospace;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .result {
+            margin-top: 20px;
+        }
+
+        .buuton {
+
+            background-color: #C0C0C0;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            font-size: 26px;
+            border: 2px solid #71797E;
+            cursor: pointer;  
+            padding: 30x 60px;
+            position: absolute; 
+            left: 50%; 
+            transform: translateX(-50%);
+            top: 81%;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+        }
+        .buuton:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            background-color: #808080;
+        }
+
+        .footer {
+            width: 99.64%;
+            border: 5px solid black;
+            background-color: black;
+            opacity: 0.5;
+	        position: absolute;
+        }
+    </style>
+
+
+    <div class="footer" style="left: 50%; transform: translateX(-50%); top: 100%; height: 32%;"></div>
+<p style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 31%; top: 100.5%; color: white; opacity: 0.7;">Contact Information</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 26%; top: 105%; color: white; opacity: 0.7;">Email: stuyvesantgamedev@gmail.com</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 29%; top: 109%; color: white; opacity: 0.7;">Number: +1 929 919 0588</p>
+<p style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 35.5%; top: 113%; color: white; opacity: 0.7;">Address</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 26%; top: 117.5%; color: white; opacity: 0.7;">345 Chambers St, New York, NY 10282</p>
+
+<a href="http://homer.stuy.edu/~trahman60/HTML/homepage.html" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 63%; top: 104%; color: white; opacity: 0.7;">Home</a>
+<a href="http://homer.stuy.edu/~trahman60/HTML/resources.html" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 61.2%; top: 108.5%; color: white; opacity: 0.7;">Resources</a>
+<a href="http://homer.stuy.edu/~trahman60/HTML/games.html" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 62.7%; top: 113%; color: white; opacity: 0.7;">Games</a>
+<a href="http://homer.stuy.edu/~trahman60/HTML/team.html" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 63%; top: 117.5%; color: white; opacity: 0.7;">Team</a>
+
+<p style="font-family: Courier New; font-size: 20px; position: absolute; left: 50%; transform: translateX(-50%); top: 124%; color: white; opacity: 0.7;">Stuyright © 2024 Game Developers</p>
+<p style="font-family: Courier New; font-size: 20px; position: absolute; left: 50%; transform: translateX(-50%); top: 127%; color: white; opacity: 0.7;">Created February 26th, 2024</p>
+
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Game Development and General Coding Quiz</h1>
+    </div>
+    <div class="square" style="left: 50%; transform: translateX(-50%); top: 21.7%; height: 66%;"></div>
+        <form action="chart.py" method="post">
+            <div class="question" style="top:26%; left: 54.3%; transform: translateX(-50%);">
+                <label for="q1">1. What is the simplest way to debug your code in a game engine?</label>
+                <select id="q1" name="q1">
+                    <option value="select">Select an Option</option>
+                    <option value="Guess">Create a copy of your script and edit values until it works</option>
+                    <option value="Print">Use a print statement in different parts of your code to see what is not working</option>
+                    <option value="GPT">Copy and paste the script to ChatGPT and tell it to fix your code</option>
+                    <option value="Internet">Scour the internet for someone with the same issue as you</option>
+                </select>
+            </div>
+            <div class="question" style="top:38%; left: 50%; transform: translateX(-50%);">
+                <label for="q2">2. What is the purpose of creating entities as seperate scenes?</label>
+                <select id="q2" name="q2">
+                    <option value="select">Select an Option</option>
+                    <option value="size">Increase file size</option>
+                    <option value="Animate">Running animations</option>
+                    <option value="Clog">Not clogging the main one</option>
+                    <option value="Instant">Instantiation and organization</option>
+                </select>
+            </div>
+            <div class="question" style="top:50%; left: 50%; transform: translateX(-50%);">
+                <label for="q3">3. What was the first ever electronic game?</label>
+                <select id="q3" name="q3">
+                    <option value="select">Select an Option</option>
+                    <option value="Bertie">Bertie the Brain</option>
+                    <option value="OXO">OXO</option>
+                    <option value="TFT">Tennis for Two</option>
+                    <option value="Pong">Pong</option>
+                </select>
+            </div>
+            <div class="question" style="top:62%; left: 50%; transform: translateX(-50%);">
+                <label for="q4">4. What does UI stand for?</label>
+                <select id="q4" name="q4">
+                    <option value="select">Select an Option</option>
+                    <option value="Control">Uncontrollable Instance</option>
+                    <option value="Instance">Unadjusted Instance</option>
+                    <option value="Inv">User Inventory</option>
+                    <option value="User">User Interface</option>
+                </select>
+            </div>
+            <div class="question" style="top:74%; left: 55%; transform: translateX(-50%);">
+                <label for="q5">5. Which option is the best way to create an Inventory System?</label>
+                <select id="q5" name="q5">
+                    <option value="select">Select an Option</option>
+                    <option value="Bool">Assign each slot a boolean variable</option>
+                    <option value="List">Create a List with each empty slot in order</option>
+                    <option value="Signal">Create a signal asking each slot if they are empty</option>
+                    <option value="Sprite">Put a hidden sprite behind each slot to be deleted when it is occupied</option>
+                </select>
+            </div>
+            <button type="submit" class="buuton">Submit</button>
+        </form>
+        <div class="result" id="result"></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyScript Matplotlib Graph</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <h1>Matplotlib Graph with PyScript</h1>
+    <div id="plot-container"></div>
+    <py-script>
+        <py-env>
+            - matplotlib
+            - numpy
+        </py-env>
+        <script type="py">
+            import matplotlib.pyplot as plt
+            import numpy as np
+            import js
+
+            async def fetch_data(file_path):
+                response = await js.fetch(file_path)
+                text = await response.text()
+                return text
+
+            def plot_data(data):
+                data = [float(i) for i in data.strip().split()]
+                x = np.arange(len(data))
+                y = np.array(data)
+
+                plt.figure(figsize=(10, 5))
+                plt.plot(x, y, marker='o')
+                plt.title('Sample Data Plot')
+                plt.xlabel('X-axis')
+                plt.ylabel('Y-axis')
+                plt.grid(True)
+
+                plt.show()
+
+            data_file_path = 'data.txt'
+            data = await fetch_data(data_file_path)
+            plot_data(data)
+        </script>
+    </py-script>
+</body>
+</html>

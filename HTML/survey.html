@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<video autoplay muted loop id="myVideo">
+  <source src="stars.mp4" type="video/mp4">
+</video>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameDevs - Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #myVideo {
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: -33%;
+            min-width: 100%; 
+            min-height: 100%;
+            object-fit: fill;
+            z-index: -10;
+        }
+        .quiz-container {
+            max-width: 60%;
+            margin: auto;
+            background-color: silver;
+            padding: 20px 50px;
+            opacity: 0.9;
+            border: 8px solid #ccc;
+            border-radius: 20px;
+            font-size: 18px;
+            position: absolute; 
+            left: 50%; 
+            transform: translateX(-50%);
+            top: 3%;
+        }
+        .square {
+            width: 50%;
+            border: 10px solid black;
+	        position: absolute;
+            background-color: silver;
+            border: 8px solid #ccc;
+            border-radius: 20px;
+            position: absolute; 
+            left: 50%; 
+            opacity: 0.9;
+            transform: translateX(-50%);
+        }
+        .question {
+            margin-bottom: 50px;
+            opacity: 0.95;
+            
+            position: absolute; 
+
+            font-family: 'Courier New', monospace;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .result {
+            margin-top: 20px;
+        }
+
+        .buuton {
+
+            background-color: #C0C0C0;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            font-size: 26px;
+            border: 2px solid #71797E;
+            cursor: pointer;  
+            padding: 30x 60px;
+            position: absolute; 
+            left: 50%; 
+            transform: translateX(-50%);
+            top: 81%;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+        }
+        .buuton:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            background-color: #808080;
+        }
+        .footer {
+            width: 99.64%;
+            border: 5px solid black;
+            background-color: black;
+            opacity: 0.5;
+	        position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+    <div class="quiz-container">
+        <h1>Fill Out This Survey To See How Your Data Compares To Others</h1>
+    </div>
+    <div class="square" style="left: 50%; transform: translateX(-50%); top: 28%; height: 66%;"></div>
+        <form action="survey.py" method="post">
+            <div class="question" style="top:35%; left: 50%; transform: translateX(-50%); text-align: center;">
+                <label for="q1" style="font-size: 28px;">What Are Your Favorite Game Genres?</label>
+<br>
+<br>
+                <input type="checkbox" id="adventure" name="languages" value="Adventure">
+                <label for="adventure">Adventure</label>
+<br>
+                <input type="checkbox" id="sandbox/simualtion" name="languages" value="Sandbox/Simualtion">
+                <label for="sandbox/simualtion">Sandbox/Simualtion</label><br>
+                <input type="checkbox" id="rPG" name="languages" value="RPG">
+                <label for="rPG">RPG</label><br>
+                <input type="checkbox" id="puzzle" name="languages" value="Puzzle">
+                <label for="puzzle">Puzzle</label><br>
+                <input type="checkbox" id="multiplayershooter" name="languages" value="Multiplayer Shooter">
+                <label for="multiplayershooter">Multiplayer Shooter</label><br>
+                <input type="checkbox" id="strategy" name="languages" value="Strategy">
+                <label for="strategy">Strategy</label><br>
+                <input type="checkbox" id="action" name="languages" value="Action">
+                <label for="action">Action</label><br>
+                <input type="checkbox" id="survival" name="languages" value="Survival">
+                <label for="survival">Survival</label><br>
+                <input type="checkbox" id="racing/sports" name="languages" value="Racing/Sports">
+                <label for="racing/sports">Racing/Sports</label><br>
+            </div>
+            
+            <button type="submit" class="buuton">Submit</button>
+        </form>
+        <div class="result" id="result"></div>
+
+
+        <div class="footer" style="left: 50%; transform: translateX(-50%); top: 100%; height: 32%;"></div>
+<p style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 31%; top: 100.5%; color: white; opacity: 0.7;">Contact Information</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 26%; top: 105%; color: white; opacity: 0.7;">Email: stuyvesantgamedev@gmail.com</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 29%; top: 109%; color: white; opacity: 0.7;">Number: +1 929 919 0588</p>
+<p style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 35.5%; top: 113%; color: white; opacity: 0.7;">Address</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 26%; top: 117.5%; color: white; opacity: 0.7;">345 Chambers St, New York, NY 10282</p>
+
+<a href="http://homer.stuy.edu/~trahman60/HTML/homepage.html" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 63%; top: 104%; color: white; opacity: 0.7;">Home</a>
+<a href="http://homer.stuy.edu/~trahman60/HTML/resources.html" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 61.2%; top: 108.5%; color: white; opacity: 0.7;">Resources</a>
+<a href="http://homer.stuy.edu/~trahman60/HTML/games.html" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 62.7%; top: 113%; color: white; opacity: 0.7;">Games</a>
+<a href="http://homer.stuy.edu/~trahman60/HTML/team.html" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 63%; top: 117.5%; color: white; opacity: 0.7;">Team</a>
+
+<p style="font-family: Courier New; font-size: 20px; position: absolute; left: 50%; transform: translateX(-50%); top: 124%; color: white; opacity: 0.7;">Stuyright © 2024 Game Developers</p>
+<p style="font-family: Courier New; font-size: 20px; position: absolute; left: 50%; transform: translateX(-50%); top: 127%; color: white; opacity: 0.7;">Created February 26th, 2024</p>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<head>
+
+<img src="logo.png" class="box" style="display: block; width: 40%; margin-left: auto; margin-right: auto; image-rendering: pixelated;">
+
+<video autoplay muted loop id="myVideo">
+  <source src="stars.mp4" type="video/mp4">
+</video>
+
+
+
+<style>
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  object-fit: fill;
+  z-index: -1;
+}
+
+#box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+z-index: 0;
+
+}
+
+.button {
+  background-color: #C0C0C0;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  border: 2px solid #71797E;
+  cursor: pointer;  
+float: left;
+}
+
+.godotbutton {
+  background-color: #4682B4;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  transition-duration: 0.4s;
+  border: 5px solid #71797E;
+  cursor: pointer;  
+border-radius: 12px;
+font-family: verdana;
+}
+
+.unitybutton {
+  background-color: #D2042D;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  transition-duration: 0.4s;
+  border: 5px solid #71797E;
+  cursor: pointer;  
+border-radius: 12px;
+font-family: verdana;
+}
+
+.vsbutton {
+  background-color: #9F2B68;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  transition-duration: 0.4s;
+  border: 5px solid #71797E;
+  cursor: pointer;  
+border-radius: 12px;
+font-family: verdana;
+}
+
+.slidesbutton {
+  background-color: #FFBF00;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  transition-duration: 0.4s;
+  border: 5px solid #71797E;
+  cursor: pointer;  
+border-radius: 12px;
+font-family: verdana;
+}
+
+.joinbutton {
+  background-color: #C0C0C0;
+  color: black;
+  padding: 26px 27px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #71797E;
+border-radius: 50%;
+  cursor: pointer;  
+position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+transition-duration: 0.4s;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #808080;
+}
+
+.button button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.button:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.joinbutton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #228B22;
+border: 2px solid black;
+}
+
+.godotbutton:hover {
+  background-color: #31597B;
+}
+
+.unitybutton:hover {
+  background-color: #79031A;
+}
+
+.vsbutton:hover {
+  background-color: #641C42;
+}
+
+.slidesbutton:hover {
+  background-color: #C39200;
+}
+
+
+.navigation {
+      height: 50px;
+length: 50px;
+      position: relative;
+}
+
+.footer {
+  width: 99.5%;
+  border: 5px solid black;
+background-color: black;
+opacity: 0.5;
+	position: absolute;
+}
+
+th {
+
+  background-color: #C0C0C0;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  border: 2px solid #71797E;
+  cursor: pointer;  
+
+
+        }
+
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+</head>
+
+
+
+<body>
+
+<div class="navigation">
+
+<img src="side1.png" style="position: absolute; left: 31.65%; top: 30%; width: 3%">
+<img src="side2.png" style="position: absolute; left: 65.5%; top: 30%; width: 3%">
+
+<a href="" class="button" style="position: absolute; left: 34.3%; top: 20px; padding: 8px 24px;">Resources</a> 
+<a href="" class="button" style="position: absolute; left: 51.5%; top: 20px; padding: 8px 40px;">Home</a> 
+<a href="" class="button" style="position: absolute; left: 41.5%; top: 20px; padding: 8px 37px;">Games</a> 
+
+<a href="" class="button" style="position: absolute; left: 58.5%; top: 20px; padding: 8px 42.5px;">Team</a> 
+<a href="https://stuyactivities.org/gamedevs/" target="_blank" class="joinbutton">Join</a> 
+
+</div>
+
+<img src="bigbox.png" class="box" style="display: block; position: absolute; left: 50%; transform: translateX(-50%); width: 57%; height: 212%; margin-left: auto; margin-right: auto; image-rendering: pixelated; top: 29.9%;">
+
+
+<h1 style="text-decoration: underline; font-size: 255%; position: absolute; left: 50%; transform: translateX(-50%); top: 35.5%; font-family: Tahoma;">Engines</h1>
+<h2 style="font-size: 250%; position: absolute; left: 35%; top: 44%">Godot:</h2>
+<h2 style="font-size: 250%; position: absolute; left: 58%; top: 44%">Unity:</h2>
+
+<h1 style="text-decoration: underline; font-size: 255%; position: absolute; left: 50%; transform: translateX(-50%); top: 69%; font-family: Tahoma;">Lessons</h1>
+
+<a href="https://editor.godotengine.org/releases/latest/" target="_blank" class="godotbutton" style="position: absolute; left: 28.5%; top: 55%; padding: 1.2% 1.5%;">Web Editor</a>
+<a href="https://godotengine.org/download/windows/" target="_blank" class="godotbutton" style="position: absolute; left: 39%; top: 55%; padding: 1.2% 1.8%;">Download</a>
+
+<a href="https://visualstudio.microsoft.com/vs/community/" target="_blank" class="vsbutton" style="position: absolute; left: 61.6%; top: 55%; padding: 1.2% 0.9%;">Visual Studio</a>
+<a href="https://unity.com/download" target="_blank" class="unitybutton" style="position: absolute; left: 51.2%; top: 55%; padding: 1.2% 1.8%;">Download</a>
+
+
+<a href="https://docs.google.com/presentation/d/1Lb_1s5AX4U6CuRu_f4N5wj9ZfmcG9lX9EVQ4Tff-J7U/edit#slide=id.p" target="_blank" class="slidesbutton" style="position: absolute; left: 50%; transform: translateX(-50%); top: 80.5%; padding: 1.5% 8%;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Introduction &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+<a href="https://docs.google.com/presentation/d/12ggbTjBoN4fn4nTssSBa7Ubjvmp4MkZroKA2w7dW22Y/" target="_blank" class="slidesbutton" style="position: absolute; left: 50%; transform: translateX(-50%); top: 92.5%; padding: 1.5% 8%;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Lesson 1: Movement &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+<a href="https://docs.google.com/presentation/d/1v_1d4CPFDOeK0ef1hUAVquNxlyJrw-KLYRs_C9EsER0/" target="_blank" class="slidesbutton" style="position: absolute; left: 50%; transform: translateX(-50%); top: 104.5%; padding: 1.5% 8%;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Lesson 2: Collisions &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+<a href="https://docs.google.com/presentation/d/1KFeX_azm0XkKAo13HLjMZGsFw987_MWKyGa7dFGYLM8/edit#slide=id.p" target="_blank" class="slidesbutton" style="position: absolute; left: 50%; transform: translateX(-50%); top: 116.5%; padding: 1.5% 8%;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Lesson 3: Triggers and Area2D &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+<a href="https://docs.google.com/presentation/d/1WChKB_K53uobdo8z21qr5MOsBpaHkqeyZhw3bVwb7yc/edit?usp=sharing" target="_blank" class="slidesbutton" style="position: absolute; left: 50%; transform: translateX(-50%); top: 128.5%; padding: 1.5% 8%;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Lesson 4: Tilemaps &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+<a href="https://docs.google.com/presentation/d/1gkP5iT35U_35Wi_Xg-IzAZ9n0b4khTDqnRipfsWhMeY/edit?usp=sharing" target="_blank" class="slidesbutton" style="position: absolute; left: 50%; transform: translateX(-50%); top: 140.5%; padding: 1.5% 8%;">&nbsp Lesson 5: Animations, Creating Objects, and Arrays</a>
+<a href="https://docs.google.com/presentation/d/1Ee7-aucdX1noUW_G50OXH_9tJNJ35BV4R5wPNK_78bU/edit?usp=sharing" target="_blank" class="slidesbutton" style="position: absolute; left: 50%; transform: translateX(-50%); top: 152.5%; padding: 1.5% 8%;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Lesson 6: Getting Started With 3D &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+<a href="https://docs.google.com/presentation/d/14sG1iG-14sBijWeI1FApR51-vVUExBNxY9DsUwve0eo/edit?usp=sharing" target="_blank" class="slidesbutton" style="position: absolute; left: 50%; transform: translateX(-50%); top: 164.5%; padding: 1.5% 8%;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Lesson 7: Projectiles and Weapon Design &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+
+
+<h1 style="text-decoration: underline; font-size: 255%; position: absolute; left: 50%; transform: translateX(-50%); top: 178%; font-family: Tahoma;">Example Of Music For Games</h1>
+<embed src="ColdFront.mp3" style="position: absolute; left: 50%; transform: translateX(-50%); top: 190%;"> </embed>
+
+<div class="footer" style="left: 50%; transform: translateX(-50%); top: 230%; height: 32%;"></div>
+<p style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 31%; top: 230.5%; color: white; opacity: 0.7;">Contact Information</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 26%; top: 235%; color: white; opacity: 0.7;">Email: stuyvesantgamedev@gmail.com</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 29%; top: 239%; color: white; opacity: 0.7;">Number: +1 929 919 0588</p>
+<p style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 35.5%; top: 243%; color: white; opacity: 0.7;">Address</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 26%; top: 247.5%; color: white; opacity: 0.7;">345 Chambers St, New York, NY 10282</p>
+
+<a href="" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 63%; top: 234%; color: white; opacity: 0.7;">Home</a>
+<a href="" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 61.2%; top: 238.5%; color: white; opacity: 0.7;">Resources</a>
+<a href="" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 62.7%; top: 243%; color: white; opacity: 0.7;">Games</a>
+<a href="" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 63%; top: 247.5%; color: white; opacity: 0.7;">Team</a>
+
+<p style="font-family: Courier New; font-size: 20px; position: absolute; left: 50%; transform: translateX(-50%); top: 254%; color: white; opacity: 0.7;">Stuyright © 2024 Game Developers</p>
+<p style="font-family: Courier New; font-size: 20px; position: absolute; left: 50%; transform: translateX(-50%); top: 257%; color: white; opacity: 0.7;">Created February 26th, 2024</p>
+
+</body>
+
+
+
+
+
+</html>
+

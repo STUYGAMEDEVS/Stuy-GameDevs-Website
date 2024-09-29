@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<head>
+
+<img src="logo.png" class="box" style="display: block; width: 40%; margin-left: auto; margin-right: auto; image-rendering: pixelated;">
+
+<video autoplay muted loop id="myVideo">
+  <source src="stars.mp4" type="video/mp4">
+</video>
+
+
+
+<style>
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  object-fit: fill;
+  z-index: -1;
+}
+
+#box {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+z-index: 0;
+}
+
+.button {
+  background-color: #C0C0C0;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+
+  border: 2px solid #71797E;
+  cursor: pointer;  
+
+}
+
+.joinbutton {
+  background-color: #C0C0C0;
+  color: black;
+  padding: 26px 27px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #71797E;
+border-radius: 50%;
+  cursor: pointer;  
+position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+transition-duration: 0.4s;
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #808080;
+}
+
+.joinbutton:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #8A9A5B;
+border: 2px solid black;
+}
+
+.navigation {
+      height: 50px;
+length: 50px;
+      position: relative;
+}
+
+
+.slider {
+        width: 1000px;
+        height: 600px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 330px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 3000px;
+        background-color: pink;
+        height: 600px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -1000px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -2000px;
+      }
+      .buttons {
+        position: relative;
+        top: -40px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+
+
+
+.playbutton {
+  background-color: #4CBB17;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  transition-duration: 0.4s;
+  border: 5px solid #71797E;
+  cursor: pointer;  
+border-radius: 12px;
+font-family: verdana;
+}
+
+.playbutton:hover {
+  background-color: #368311;
+}
+
+.wipbutton {
+  background-color: #D2042D;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+  transition-duration: 0.4s;
+  border: 5px solid #71797E;
+  cursor: pointer;  
+border-radius: 12px;
+font-family: verdana;
+}
+
+.wipbutton:hover {
+  background-color: #79031A;
+}
+
+.square {
+  width: 1050px;
+  border: 25px solid #A9A9A9;
+	position: absolute;	
+}
+
+.picborder {
+  width: 1000px;
+  border: 5px solid black;
+	position: absolute;
+}
+
+.footer {
+  width: 99.64%;
+  border: 5px solid black;
+background-color: black;
+opacity: 0.5;
+	position: absolute;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<div class="navigation">
+
+<img src="side1.png" style="position: absolute; left: 36.4%; top: 15.5px; width: 2.24%">
+<img src="side2.png" style="position: absolute; left: 61.8%; top: 15.5px; width: 2.24%">
+
+<a href="" class="button" style="position: absolute; left: 38.3%; top: 20px; padding: 8px 24px;">Resources</a> 
+<a href="" class="button" style="position: absolute; left: 51.3%; top: 20px; padding: 8px 40px;">Home</a> 
+<a href="" class="button" style="position: absolute; left: 43.5%; top: 20px; padding: 8px 37px;">Games</a> 
+
+<a href="" class="button" style="position: absolute; left: 56.6%; top: 20px; padding: 8px 42.5px;">Team</a> 
+<a href="https://stuyactivities.org/gamedevs/" target="_blank" class="joinbutton">Join</a> 
+
+</div>
+
+<img src="bigbox.png" class="box" style="display: block; position: absolute; left: 50%; transform: translateX(-50%); width: 57%; margin-left: auto; margin-right: auto; image-rendering: pixelated;">
+
+<div class="square" style="left: 50%; transform: translateX(-50%); top: 520px; height: 865px;"></div>
+<div class="square" style="left: 50%; transform: translateX(-50%); top: 1410px; height: 865px;"></div>
+<div class="square" style="left: 50%; transform: translateX(-50%); top: 2300px; height: 840px;"></div>
+<div class="picborder" style="left: 50%; transform: translateX(-50%); top: 649px; height: 600px;"></div>
+<div class="picborder" style="left: 50%; transform: translateX(-50%); top: 1565px; height: 575px;"></div>
+<div class="picborder" style="left: 50%; transform: translateX(-50%); top: 2465px; height: 575px;"></div>
+
+
+<h1 style="font-size: 275%; position: absolute; left: 50%; transform: translateX(-50%); top: 400px; font-family: Tahoma;">Featured Games</h1>
+
+<h2 style="font-size: 250%; position: absolute; left: 50%; transform: translateX(-50%); top: 530px">Mood 3</h2>
+<p style="font-size: 25px; position: absolute; left: 50%; transform: translateX(-50%); top: 585px;"> Multiplayer </p>
+
+<div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+        <img src="mood1.png" class="slide" width="1000" height="600" />
+        <img src="mood2.png" class="slide" width="1000" height="600" />
+        <img src="mood3.png" class="slide" width="1000" height="600" />
+      </div>
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+      </div>
+    </div>
+
+<a href="https://tornadoesend.itch.io/mood-3-alphabeta" target="_blank" class="playbutton" style="position: absolute; left: 50%; transform: translateX(-50%); top: 1267px; padding: 24px 90px;">Play</a>
+
+
+<h2 style="font-size: 250%; position: absolute; left: 50%; transform: translateX(-50%); top: 1450px">Reign</h2>
+<p style="font-size: 25px; position: absolute; left: 50%; transform: translateX(-50%); top: 1505px;"> Local Co-op </p>
+<img src="reign2.png" width="1000" height="575" style="position: absolute; left: 50%; transform: translateX(-50%); top: 1570px" />
+<a href="https://tobber55.itch.io/reignn" target="_blank" class="playbutton" style="position: absolute; left: 50%; transform: translateX(-50%); top: 2160px; padding: 24px 90px;">Play</a>
+
+<h3 style="font-size: 250%; position: absolute; left: 50%; transform: translateX(-50%); top: 2350px">Updraft</h3>
+<p style="font-size: 25px; position: absolute; left: 50%; transform: translateX(-50%); top: 2405px;"> Singleplayer </p>
+<img src="updraft.png" width="1000" height="575" style="position: absolute; left: 50%; transform: translateX(-50%); top: 2470px" />
+<a target="_blank" class="wipbutton" style="position: absolute; left: 50%; transform: translateX(-50%); top: 3060px; padding: 24px 20px;">Work In Progress</a>
+
+
+<div class="footer" style="left: 50%; transform: translateX(-50%); top: 3400px; height: 300px;"></div>
+<p style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 31%; top: 3400px; color: white; opacity: 0.7;">Contact Information</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 27%; top: 3430px; color: white; opacity: 0.7;">Email: stuyvesantgamedev@gmail.com</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 29%; top: 3460px; color: white; opacity: 0.7;">Number: +1 929 919 0588</p>
+<p style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 34.5%; top: 3500px; color: white; opacity: 0.7;">Address</p>
+<p style="font-size: 25px; font-family: Courier New; position: absolute; left: 26.8%; top: 3530px; color: white; opacity: 0.7;">345 Chambers St, New York, NY 10282</p>
+
+<a href="" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 63%; top: 3430px; color: white; opacity: 0.7;">Home</a>
+<a href="" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 61.5%; top: 3470px; color: white; opacity: 0.7;">Resources</a>
+<a href="" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 62.7%; top: 3510px; color: white; opacity: 0.7;">Games</a>
+<a href="" style="text-decoration: underline; font-family: Courier New; font-size: 25px; position: absolute; left: 63%; top: 3550px; color: white; opacity: 0.7;">Team</a>
+
+<p style="font-family: Courier New; font-size: 20px; position: absolute; left: 50%; transform: translateX(-50%); top: 3600px; color: white; opacity: 0.7;">Stuyright © 2024 Game Developers</p>
+<p style="font-family: Courier New; font-size: 20px; position: absolute; left: 50%; transform: translateX(-50%); top: 3630px; color: white; opacity: 0.7;">Created February 26th, 2024</p>
+
+</body>
+
+
+
+
+
+</html>
+
